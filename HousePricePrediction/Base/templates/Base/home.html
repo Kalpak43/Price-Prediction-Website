@@ -1,6 +1,60 @@
 <body>
     {% extends 'index.html' %}
     {% block content %}
-    <h2>Home</h2>
+        <div class="pred-container">
+            <form action="" method="post" class="form">
+                {% csrf_token %}
+                <p>Tell us about your dream house--</p>
+                <br>
+                <input type="text" name="location" id="location" list="loc_list" placeholder="Location" required>
+                <datalist name="loc_list" id="loc_list">
+                    <select name="loc" id="loc">
+                        {% for loc in locations %}
+                        <option>{{loc}}</option>
+                        {% endfor %}
+                    </select>
+                </datalist>
+                <br>
+    
+                <input type="text" name="size" id="size" list="size_list" placeholder="BHK" required>
+                <datalist name="size_list" id="size_list">
+                    <select name="BHK" id="BHK">
+                        {% for BHK in BHK %}
+                        <option>{{BHK}}</option>
+                        {% endfor %}
+                    </select>
+                </datalist>
+                <br>
+    
+                <input type="text" name="Bath" id="Bath" list="bath_list" placeholder="Bath" required>
+                <datalist name="bath_list" id="bath_list">
+                    <select name="Brooms" id="Brooms">
+                        {% for room in Bath %}
+                        <option>{{room}}</option>
+                        {% endfor %}
+                    </select>
+                </datalist>
+                <br>
+    
+                <input type="number" name="sqft" id="sqft" min={{Min_sqft}} max={{Max_sqft}} step="50" placeholder="Area(sqft)"required>
+                <br>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+    
+            <div class="res">
+                {% if predicted %}
+                <div class="table">
+                    <h4>Our Prediction</h4>
+                    <p><b>Location: </b>{{Pred.loc}}</p>
+                    <p><b>Size: </b>{{Pred.size}} BHK</p>
+                    <p><b>Bath: </b>{{Pred.bath}}</p>
+                    <p><b>Area: </b>{{Pred.area}} sqft</p>
+                    <div class="mainblock">
+                        <p><b>Predicted Price: </b>{{Pred.res}}L</p>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
     {% endblock %}
 </body>

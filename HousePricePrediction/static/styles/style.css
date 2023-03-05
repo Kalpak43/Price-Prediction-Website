@@ -1,7 +1,96 @@
-h1 {
-    background-color: bisque;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    background: purple;
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: rgba(240, 248, 255, 0.855);
+}
+
+.hero {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+nav {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border-bottom: 2px dashed wheat;
+}
+
+nav span {
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.pred-container {
+    display: grid;
+    flex-grow: 1;
+    grid-template-rows: auto auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+form p {
+    font-family: cursive;
+}
+
+form input {
+    background-color: rgba(240, 248, 255, 0.855);
+    width: 30%;
+    min-width: 250px;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.submit {
+    width: 10%;
+    min-width: 100px;
+    border-radius: 0.5rem;
+    background-color: wheat;
+}
+
+.submit:hover {
+    background-color: gold;
+}
+
+.res {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.table {
+    border: 2px dashed wheat;
+    padding: 0.5rem;
+}
+
+.table p b {
+    color: rgba(172, 178, 182, 0.855);
+}
+
+.table h4 {
+    text-decoration: underline;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.table .mainblock b, .table h4 {
+    color: wheat;
+}
+
+.table .mainblock p {
+    color: rgb(189, 168, 53);
 }
