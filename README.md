@@ -5,7 +5,8 @@
 3) The entire backend and frontend was implemented by me.
 4) This is simple website. An user has to input the requirements for their house and the location. After that the model is able to predict the price based on the values entered.
 
-![image](https://user-images.githubusercontent.com/111725804/222966495-65405457-2df8-48ba-a22d-efe835cde37d.png)
-![image](https://user-images.githubusercontent.com/111725804/222966562-602f2bbd-f8a1-4536-b7fd-611a8ef6a897.png)
-![image](https://user-images.githubusercontent.com/111725804/222966586-1829dbc3-8da4-4f95-a488-fb3be683c890.png)
+![image](https://user-images.githubusercontent.com/111725804/222966755-d05dae16-85aa-4756-b23b-82794024ef46.png)
+![image](https://user-images.githubusercontent.com/111725804/222966789-32b4a122-34ad-4e97-a416-189c5c2d23de.png)
+![image](https://user-images.githubusercontent.com/111725804/222966793-63898624-87f5-4d2e-a2af-566feeddb161.png)
 
+[This project is completed but we will be trying to make some improvements to it in future.]
